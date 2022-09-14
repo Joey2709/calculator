@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body onload="main()">
+    <div class="container">
+      <h1>Calculator</h1>
+      <div class="screen-container">
+        <div class="screen">
+          <p id="operation"></p>
+          <p id="screen" maxlength="24"></p>
+        </div>
+      </div>
+      <div class="buttons">
+        <div class="row-1">
+          <button onclick="reset()">clear</button>
+          <button id="delete" onclick="deleteNumber()">🡆</button>
+        </div>
+        <div class="row-2">
+          <button id="seven">7</button>
+          <button id="eight">8</button>
+          <button id="nine">9</button>
+          <button id="divide">/</button>
+        </div>
+        <div class="row-3">
+          <button id="four">4</button>
+          <button id="five">5</button>
+          <button id="six">6</button>
+          <button id="multiply">x</button>
+        </div>
+        <div class="row-4">
+          <button id="one">1</button>
+          <button id="two">2</button>
+          <button id="three">3</button>
+          <button id="subtract">-</button>
+        </div>
+        <div class="row-5">
+          <button id="zero">0</button>
+          <button id="point">.</button>
+          <button id="result">=</button>
+          <button id="add">+</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
